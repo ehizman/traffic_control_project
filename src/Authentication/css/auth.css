@@ -1,0 +1,17 @@
+.auth_login{
+    background-color:darkblue;
+    padding: 20px 20px;
+    width: 100%;
+    border-radius: 4px;
+    color : white;
+    margin-top: 100px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

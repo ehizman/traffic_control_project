@@ -16,10 +16,14 @@ function App() {
         }
       }
     }
+    clearInterval(timer);
   };
-  setInterval(changeColor, 5000);
+  let timer = setInterval(changeColor, 3000);
   return (
     <div className="container">
+      <div className="header">
+        <h2> Traffic Light Simulation </h2>
+      </div>
       <div className="light_board">
         {["red", "amber", "green"].map((_color, index) => (
           <Light class={value === _color ? _color : "grey"} key={index} />
